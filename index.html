@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="08_async.js"></script>
+  </head>
+  <body>
+    <h1>script js파일은 어디에 선언해야 할까?</h1>
+    <pre>
+        head부분에 위치하면, 만약 해당 페이지가 js에 의존적이거나 js파일이 클 경우
+        js파일이 다운될 때 까지 html이 로드되지 않기 때문에 (HTML parsing이 진행되지 않기 때문에)
+        호멮이지 로드 속도가 매우 느려질 수 있다.
+        반면 모든 코드가 끝나는 end body태그 위에 선언하면, html은 다 받아지겠지만 
+        js파일에 디자인 요소가 많거나 기능이 많이 들어간 경우 정상적인 홈페이지를 모는 데 
+        결국 시간이 오래 걸리게 된다.
+        &lt;script async src="main.js"&gt;&lt;/script&gt;스크립트에 async를 넣어주면
+        async는 boolean타입이기 때문에 선언해주는 것 만으로도 true로 되어,
+        html이 파싱되는 동안, parser가 '음! 이거 다운받아야 되는거네?'하고 계속 파싱을 하고
+        js가 모두 다운이 되면 parsing을 멈춘 뒤 다운로드 된 js파일을 실행한다.
+
+        하지만 자바스크립트가 html이 모두 파싱되기 전에 실행되기 때문에 만약 자바스크립트 파일에서 돔 요소를
+        조작한다면, 해당 요소들이 아직 정의되지 않았을 수 있고, 또는 자바스크립트를 실행하기 위해
+        파싱이 멈추기 때문에 여전히 사용자가 홈페이지를 모두 보게 되기까지 시간이 걸릴 수 있다.
+
+        &lt;script defer src="main.js"&gt; 이렇게 스크립트 안에 defer를 정의해주면
+        parser는 파일을 다운받자는 명령을 해놓고 html을 계속 parsing한다.
+        parsing이 모두 끝나고 나면 그때 js파일을 실행한다. 속도가 가장 빠르고 안전하다.
+
+
+
+    </pre>
+  </body>
+</html>
