@@ -61,6 +61,10 @@ https://www.youtube.com/c/%EB%93%9C%EB%A6%BC%EC%BD%94%EB%94%A9by%EC%97%98%EB%A6%
    > 1. [callback](https://github.com/seoulsaram/jsBasic_Ellie/blob/master/async/01_callback.js) : 콜백함수란 무엇인가? 그리고 콜백 지옥이란 무엇인가? 알아보자.
    > 2. [promise](https://github.com/seoulsaram/jsBasic_Ellie/blob/master/async/02_promise.js) : 콜백함수 대신 사용할 수 있는 깔끔한 오브젝트, promise를 배워보자
 
-   > > ❓ then, catch, finally, Promise chaining 3. [callback-to-promise](https://github.com/seoulsaram/jsBasic_Ellie/blob/master/async/03_callback-to-promise.js) : 이렇게 간단하게 쓸 수 있는 promise도 callback hell이 있다. 구경해보자 4. [async function](https://github.com/seoulsaram/jsBasic_Ellie/blob/master/08_async.js) : promise를 더 간단하게 써보고 promise api도 구경하고, await이 뭔지, 뭘 기다리라는건지 알아보러 가자!
+   > > ❓ then, catch, finally, Promise chaining
+
+   > 3. [callback-to-promise](https://github.com/seoulsaram/jsBasic_Ellie/blob/master/async/03_callback-to-promise.js) : 이렇게 간단하게 쓸 수 있는 promise도 callback hell이 있다. 구경해보자
+
+   > 4. [async function](https://github.com/seoulsaram/jsBasic_Ellie/blob/master/08_async.js) : promise를 더 간단하게 써보고 promise api도 구경하고, await이 뭔지, 뭘 기다리라는건지 알아보러 가자!
 
    > > ❓ Promise.all, Promise.race
