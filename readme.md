@@ -29,7 +29,7 @@ https://www.youtube.com/c/%EB%93%9C%EB%A6%BC%EC%BD%94%EB%94%A9by%EC%97%98%EB%A6%
    >
    > 1. [array APIs](https://github.com/seoulsaram/jsBasic_Ellie/blob/master/03_api_array.js) : 배열에 대한 이해와 유용한 배열 api 알아보기
 
-   > > ❓ join, reverse, slice, find, filter, map, some, every, reduce...
+   > > ❓ join, reverse, splice, find, filter, map, some, every, reduce...
 
 ---
 
